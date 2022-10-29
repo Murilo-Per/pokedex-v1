@@ -36,11 +36,10 @@ main {
 
 .pokemon_data {
     position: absolute;
-    font-size: 15px;
     color: rgb(95, 92, 92);
     top: 55.5%;
     right: 27%;
-    font-size: clamp(3px , 3vw, 15px);
+    font-size: clamp(6px , 3vw, 15px);
 }
 
 .pokemon_number {
@@ -49,11 +48,12 @@ main {
 
 .pokemon_name{
     text-transform: capitalize;
+    color: rgb(31, 30, 30);
 }
 
 .form {
     position: absolute;
-    width: 63%;
+    width: 65%;
     top: 65%;
     left: 14%;
 }
@@ -62,9 +62,56 @@ main {
     width: 100%;
     padding: 3%;
     outline: none;
-    border: 2px solid #3333;
+    border: 2px solid #333 !important;
     border-radius: 8px;
-    color: #3a444d;
-    font-size: clamp(3px , 3vw, 15px);
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    font-size: clamp(6px , 3vw, 15px);
+    box-shadow: -3px 4px 0 #777, -5px 7px 0 #333;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #333;
+    border-radius: 8px;   
+    font-size: clamp(6px , 3vw, 15px);
+    color: white;
+    background-color: #444;
+    box-shadow: -3px 4px 0 #222, -3px 4px 0 #333;  
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.6rem;
+}
+
+.radiodiv {
+    top: 110%;
+    left: -1%;
+    position: absolute;
+    width: 30%;
+    height: 150%;
+}
+
+.focusctrl {
+    left: -20%;
+    user-select: none;
+    width: 100%;
+}
+
+.focusctrl:focus-within {
+    color: #fc9803; 
+}
+
+input[type="radio"] {
+    appearance: none;
 }
